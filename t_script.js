@@ -1,6 +1,6 @@
 var currentplayer = 1;
 var winning_combo = [[1,2,3], [1,4,7], [2,5,8], [3,6,9], [4,5,6], [7,8,9], [1,5,9], [7,5,3]];
-var board=[];
+var board=[null,null,null,null,null,null,null,null,null,null];
 
 
 console.log(winning_combo);
@@ -39,7 +39,7 @@ function boxclicked(e, num) {
 
 function check_victory(content) {
     for(var i=0; i< winning_combo.length; i++){
-        if(typeof [0][0] != 'undefined' && [0][0] == [0][1] && [0][1] == [0][2] board[winning_combo[i][0]] == board[winning_combo[i][1]] == board[winning_combo[i][2]]);
+        if(board[winning_combo[i][0]] != null &&  board[winning_combo[i][0]] == board[winning_combo[i][1]] == board[winning_combo[i][2]])
         {
             alert(content +' You WIN!');
         }

@@ -1,19 +1,36 @@
 <html>
-    <head>
-        <title>Play TicTacToe!</title>
-        <link rel="stylesheet" href="t_style.css">
-        <script src="t_script.js"></script>
-    </head>
-    
-    
-    <body>
+<head>
+    <title>Play TicTacToe!</title>
+    <link rel="stylesheet" href="t_style.css">
+    <script src="t_script.js"></script>
+</head>
+<header>
+    <div class="title">
+        <h1>LET'S PLAY TIC TAC TOE!</h1>
+    </div>
+    <div class="player1">
+        <h1>Player 1</h1>
+    </div>
+    <button type="Button" class="reset" onclick="resetgame()">
+        <h1>Reset</h1>
+    </button>
+    <div class="player2">
+        <h1>Player 2</h1>
+    </div>
+</header>  
+<body>
+    <div class="container">
         <div class="box_container">
-        
-        
-        
-        
+            <div class="boxes" onclick="boxclicked(this, 1)" id="box1"></div>
+            <div class="boxes" onclick="boxclicked(this, 2)" id="box2"></div>
+            <div class="boxes" onclick="boxclicked(this, 3)" id="box3"></div>
+            <div class="boxes" onclick="boxclicked(this, 4)" id="box4"></div>
+            <div class="boxes" onclick="boxclicked(this, 5)" id="box5"></div>
+            <div class="boxes" onclick="boxclicked(this, 6)" id="box6"></div>
+            <div class="boxes" onclick="boxclicked(this, 7)" id="box7"></div>
+            <div class="boxes" onclick="boxclicked(this, 8)" id="box8"></div>
+            <div class="boxes" onclick="boxclicked(this, 9)" id="box9"></div>
         </div>
-        
-    </body>
-
+    </div>
+</body>
 </html>
